@@ -21,7 +21,7 @@ export const HeroCinematic = () => {
     }, [])
 
     return (
-        <section className="relative h-screen min-h-[900px] flex flex-col justify-center items-center overflow-hidden bg-dark">
+        <section className="relative h-screen min-h-[100dvh] md:min-h-[900px] flex flex-col justify-center items-center overflow-hidden bg-dark">
             {/* Cinematic Background Carousel */}
             {HERO_IMAGES.map((img, index) => (
                 <div 
@@ -44,19 +44,19 @@ export const HeroCinematic = () => {
                 </div>
             ))}
 
-            <Container className="relative z-10 text-white w-full flex flex-col items-center justify-center text-center h-full max-w-6xl">
-                <div className="fade-up flex flex-col items-center">
-                    <div className="flex items-center gap-4 mb-6">
-                        <span className="w-12 h-[2px] bg-secondary" />
-                        <span className="text-secondary font-bold uppercase tracking-[0.3em] text-xs md:text-sm">The One Motors Collection</span>
+            <Container className="relative z-10 text-white w-full flex flex-col items-center justify-center text-center h-full max-w-6xl px-4 md:px-6">
+                <div className="fade-up flex flex-col items-center pt-20 md:pt-0">
+                    <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+                        <span className="w-8 md:w-12 h-[2px] bg-secondary" />
+                        <span className="text-secondary font-bold uppercase tracking-[0.3em] text-[10px] md:text-sm">The One Motors Collection</span>
                     </div>
 
-                    <h1 className="text-6xl md:text-[8rem] lg:text-[9rem] font-serif leading-[0.9] tracking-tighter mb-10 drop-shadow-2xl">
+                    <h1 className="text-5xl md:text-[8rem] lg:text-[9rem] font-serif leading-[0.95] md:leading-[0.9] tracking-tighter mb-6 md:mb-10 drop-shadow-2xl">
                         Uncompromising <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500 italic">Performance.</span>
                     </h1>
                     
-                    <p className="text-xl md:text-2xl text-gray-200 mb-16 max-w-2xl mx-auto leading-relaxed font-light">
+                    <p className="text-lg md:text-2xl text-gray-200 mb-8 md:mb-16 max-w-2xl mx-auto leading-relaxed font-light">
                         Curating the finest collection of prestige vehicles. Where uncompromising quality meets unparalleled service.
                     </p>
 
@@ -66,14 +66,14 @@ export const HeroCinematic = () => {
             </Container>
 
             {/* Cinematic Progress Bar */}
-            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+            <div className="absolute bottom-6 md:bottom-12 left-1/2 -translate-x-1/2 flex gap-3 z-20">
                 {HERO_IMAGES.map((_, i) => (
                     <button 
                         key={i}
                         onClick={() => setCurrentImageIndex(i)}
                         className={`transition-all duration-500 rounded-full ${
                             i === currentImageIndex 
-                            ? 'w-12 h-1 bg-white shadow-[0_0_10px_white]' 
+                            ? 'w-8 h-1 md:w-12 md:h-1 bg-white shadow-[0_0_10px_white]' 
                             : 'w-2 h-1 bg-white/30 hover:bg-white/50'
                         }`}
                     />

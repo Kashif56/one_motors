@@ -191,18 +191,18 @@ export const TheOneMotorsWayV4 = () => {
 // V5: Dark Mode Adapted (Previously "Negative")
 export const TheOneMotorsWayV5_Dark = () => {
     return (
-        <Section className="bg-[#050505] py-24 text-white relative">
+        <Section className="bg-[#050505] py-16 md:py-24 text-white relative">
             <Container>
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 px-2">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-16 px-2">
                     <h2 className="text-5xl md:text-8xl font-black tracking-tighter text-white/10">THE WAY</h2>
-                    <div className="text-right">
+                    <div className="text-right mt-4 md:mt-0">
                         <p className="font-bold text-secondary uppercase tracking-widest text-sm">Transparent Process</p>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border-t-2 border-white/10">
                     {steps.map((step, i) => (
-                        <div key={i} className="border-b md:border-b-0 md:border-r border-white/10 p-8 hover:bg-white/5 transition-colors relative h-full flex flex-col justify-between min-h-[250px] group">
+                        <div key={i} className="border-b md:border-b-0 md:border-r border-white/10 p-6 md:p-8 hover:bg-white/5 transition-colors relative h-full flex flex-col justify-between min-h-[200px] md:min-h-[250px] group">
                             <div>
                                 <div className="flex justify-between mb-8">
                                     <span className="font-bold text-xl text-white/50 group-hover:text-white transition-colors">0{i+1}</span>

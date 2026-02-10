@@ -9,7 +9,7 @@ const contacts = {
 // Cinematic Footer - Dark Version
 const CallToAction = () => {
     return (
-        <Section className="relative py-32 md:py-48 flex items-center justify-center overflow-hidden bg-black">
+        <Section className="relative py-16 md:py-48 flex items-center justify-center overflow-hidden bg-black">
              {/* Background Image with heavy dark overlay */}
              <div className="absolute inset-0 z-0">
                   <img 

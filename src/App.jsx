@@ -6,6 +6,7 @@ import WhatsAppButton from './components/common/WhatsAppButton'
 import Home from './pages/Home'
 import Cars from './pages/Cars'
 import CarDetails from './pages/CarDetails'
+import About from './pages/About'
 import Login from './pages/admin/Login'
 import Dashboard from './pages/admin/Dashboard'
 import AddCar from './pages/admin/AddCar'
@@ -29,6 +30,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/cars" element={<Cars />} />
             <Route path="/cars/:id" element={<CarDetails />} />
+            <Route path="/about" element={<About />} />
             <Route path="/admin/login" element={<Login />} />
             
             <Route 

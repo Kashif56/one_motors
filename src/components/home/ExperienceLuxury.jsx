@@ -58,7 +58,7 @@ export const ExperienceLuxuryV4 = () => {
             <div className="absolute inset-0 bg-secondary/20 translate-x-4 translate-y-4 md:translate-x-8 md:translate-y-8 z-0 transition-transform group-hover:translate-x-2 group-hover:translate-y-2" />
             <img 
               src={CarImage} 
-              className="relative z-10 w-full h-[400px] md:h-[600px] object-cover grayscale-[20%] contrast-125 group-hover:grayscale-0 transition-all duration-700 ease-out"
+              className="relative z-10 w-full h-[300px] md:h-[600px] object-cover grayscale-[20%] contrast-125 group-hover:grayscale-0 transition-all duration-700 ease-out"
               alt="Luxury Car"
             />
             {/* Floating Detail Badge */}

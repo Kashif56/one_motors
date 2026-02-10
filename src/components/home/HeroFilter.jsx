@@ -8,7 +8,7 @@ const HeroFilter = () => {
     const [price, setPrice] = useState('')
 
     return (
-        <div className="w-full max-w-5xl mx-auto mt-12 fade-up" style={{ animationDelay: '0.2s' }}>
+        <div className="w-full max-w-5xl mx-auto mt-8 md:mt-12 fade-up" style={{ animationDelay: '0.2s' }}>
             <div className="glass-card p-4 md:p-6 backdrop-blur-2xl border-white/10 bg-black/40 rounded-[2rem] shadow-2xl">
                 <div className="flex flex-col lg:flex-row gap-4">
                     {/* Make Selection */}

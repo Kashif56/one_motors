@@ -14,15 +14,18 @@ const TrustBadges = () => {
             <Container>
                 <div className="flex flex-wrap justify-center lg:justify-between gap-y-12">
                      {stats.map((stat, i) => (
-                         <div key={i} className="w-1/2 lg:w-1/4 px-4 border-l border-white/10 first:border-l-0 flex flex-col justify-between h-24 hover:bg-white/5 transition-colors -ml-[1px] pl-8 group cursor-default rounded-r-xl">
-                             <div className="text-secondary font-bold text-[10px] uppercase tracking-[0.2em] mb-auto opacity-70 group-hover:opacity-100 transition-opacity">
+                         <div key={i} className={`w-1/2 lg:w-1/4 px-4 border-l border-white/10 first:border-l-0 flex flex-col justify-between min-h-[6rem] hover:bg-white/5 transition-colors -ml-[1px] pl-4 md:pl-8 group cursor-default 
+                            ${i === 2 ? 'border-l-0 lg:border-l' : ''}
+                            ${i < 2 ? 'border-b lg:border-b-0' : ''}
+                         `}>
+                             <div className="text-secondary font-bold text-[10px] uppercase tracking-[0.2em] mb-auto opacity-70 group-hover:opacity-100 transition-opacity pt-4 lg:pt-0">
                                 0{i+1}
                              </div>
-                             <div>
-                                 <div className="text-3xl md:text-5xl font-serif text-white mb-2 leading-none italic group-hover:text-secondary transition-colors">
+                             <div className="pb-4 lg:pb-0">
+                                 <div className="text-2xl md:text-5xl font-serif text-white mb-2 leading-none italic group-hover:text-secondary transition-colors">
                                     {stat.value}
                                  </div>
-                                 <div className="text-xs text-gray-500 font-bold uppercase tracking-wider group-hover:text-white transition-colors">
+                                 <div className="text-[10px] md:text-xs text-gray-500 font-bold uppercase tracking-wider group-hover:text-white transition-colors">
                                     {stat.label}
                                  </div>
                              </div>

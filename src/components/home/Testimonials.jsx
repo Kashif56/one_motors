@@ -53,13 +53,13 @@ const Testimonials = () => {
     return (
         <Section className="bg-[#080808] py-32 relative overflow-hidden">
              {/* Background Big Quote */}
-             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%] text-[300px] md:text-[500px] font-serif text-white/5 opacity-20 pointer-events-none select-none overflow-hidden leading-none z-0">"</div>
+             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%] text-[200px] md:text-[500px] font-serif text-white/5 opacity-20 pointer-events-none select-none overflow-hidden leading-none z-0">"</div>
              
              <Container className="relative z-10">
                  <div className="max-w-5xl mx-auto text-center flex flex-col items-center">
                      
                      {/* Em Dash Header */}
-                     <div className="flex items-center gap-3 md:gap-4 mb-20 fade-up">
+                     <div className="flex items-center gap-3 md:gap-4 mb-10 md:mb-20 fade-up">
                         <span className="w-8 md:w-12 h-[2px] bg-secondary" />
                         <span className="text-secondary font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs">Spotlight Review</span>
                      </div>
