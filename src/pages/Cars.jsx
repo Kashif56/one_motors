@@ -1,31 +1,48 @@
 
 import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import { Link, useSearchParams } from 'react-router-dom' // Combined import
 import { Filter, Zap, ArrowUpRight, X } from 'lucide-react'
 import { fetchCars } from '../redux/slices/carsSlice'
+import { setSearchQuery, setPriceRange } from '../redux/slices/filterSlice' // Added action imports
 import { Container } from '../components/common/Layout'
 import { Button } from '../components/common/UIComponents'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Link } from 'react-router-dom'
 import FilterSidebar from '../components/cars/FilterSidebar'
 
 // --- SHARED DATA HOOK ---
 const useCarData = () => {
     const dispatch = useDispatch()
+    const [searchParams] = useSearchParams()
     const { items: cars, loading, error } = useSelector((state) => state.cars)
     const filters = useSelector((state) => state.filter)
 
     useEffect(() => {
         dispatch(fetchCars())
-    }, [dispatch])
+        
+        // Sync URL params to Redux state on mount/update
+        const search = searchParams.get('search')
+        const minPrice = searchParams.get('minPrice')
+        const maxPrice = searchParams.get('maxPrice')
+
+        if (search && search !== filters.searchQuery) {
+            dispatch(setSearchQuery(search))
+        }
+        if (minPrice && maxPrice) {
+            // Only dispatch if different to avoid potential loops (though strict equality check on arrays is tricky, simple check here helps)
+            dispatch(setPriceRange([Number(minPrice), Number(maxPrice)]))
+        }
+    }, [dispatch, searchParams]) // Added searchParams to dependency
 
     // Filtering Logic
     const filteredCars = cars.filter((car) => {
-        const searchTerm = filters.search?.toLowerCase() || ''
-        const searchMatch = !searchTerm ||
-            car.title?.toLowerCase().includes(searchTerm) ||
-            car.brand?.toLowerCase().includes(searchTerm) ||
-            car.model?.toLowerCase().includes(searchTerm)
+        const searchTerm = filters.searchQuery?.toLowerCase().trim() || ''
+        
+        // Multi-word search logic (e.g. "Honda Civic" -> checks if BOTH "honda" and "civic" are in the car string)
+        const searchMatch = !searchTerm || searchTerm.split(' ').every(term => {
+             const carString = `${car.brand} ${car.model} ${car.title}`.toLowerCase()
+             return carString.includes(term)
+        })
 
         const minPrice = filters.priceRange?.[0] || 0
         const maxPrice = filters.priceRange?.[1] || 10000000
