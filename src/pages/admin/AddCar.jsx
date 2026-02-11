@@ -135,7 +135,7 @@ const AddCar = () => {
           {/* Form Side */}
           <div className="lg:col-span-8 flex-grow">
             <div className="glass-card p-8 md:p-12 rounded-[40px] border border-white/10 bg-white/5">
-              <h1 className="text-4xl font-serif font-bold mb-10 text-white">Add New Vehicle</h1>
+              <h1 className="text-4xl  font-bold mb-10 text-white">Add New Vehicle</h1>
 
               <form onSubmit={handleSubmit} className="space-y-10">
                 {/* Basic Info */}

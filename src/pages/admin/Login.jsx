@@ -38,7 +38,7 @@ const Login = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white/5 text-white rounded-3xl mb-6 shadow-2xl border border-white/10 backdrop-blur-sm">
             <Car size={36} className="text-secondary" />
           </div>
-          <h1 className="text-4xl font-serif font-bold text-white">Admin Access</h1>
+          <h1 className="text-4xl  font-bold text-white">Admin Access</h1>
           <p className="text-gray-400 mt-3 text-lg">Enter secure passkey to proceed</p>
         </div>
 

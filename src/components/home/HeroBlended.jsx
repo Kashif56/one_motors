@@ -31,7 +31,7 @@ export const HeroBlended = () => {
                         </div>
 
                         {/* Impactful Headline - Blend of Classic & Modern */}
-                        <h1 className="text-6xl md:text-[7.5rem] font-serif leading-[0.85] tracking-tight mb-8">
+                        <h1 className="text-6xl md:text-[7.5rem]  leading-[0.85] tracking-tight mb-8">
                             Uncompromising <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500 italic font-light">Excellence</span>
                         </h1>
@@ -106,19 +106,19 @@ export const HeroBlended = () => {
                 <Container>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-70 hover:opacity-100 transition-opacity duration-500">
                         <div>
-                            <span className="block text-2xl font-serif text-white mb-1">2024</span>
+                            <span className="block text-2xl  text-white mb-1">2024</span>
                             <span className="text-xs uppercase tracking-widest text-gray-500">Latest Models</span>
                         </div>
                         <div>
-                            <span className="block text-2xl font-serif text-white mb-1">0-60</span>
+                            <span className="block text-2xl  text-white mb-1">0-60</span>
                             <span className="text-xs uppercase tracking-widest text-gray-500">3.2 Seconds</span>
                         </div>
                         <div>
-                            <span className="block text-2xl font-serif text-white mb-1">500+</span>
+                            <span className="block text-2xl  text-white mb-1">500+</span>
                             <span className="text-xs uppercase tracking-widest text-gray-500">Horsepower</span>
                         </div>
                         <div>
-                            <span className="block text-2xl font-serif text-white mb-1">5★</span>
+                            <span className="block text-2xl  text-white mb-1">5★</span>
                             <span className="text-xs uppercase tracking-widest text-gray-500">Customer Rating</span>
                         </div>
                     </div>

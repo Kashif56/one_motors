@@ -21,7 +21,7 @@ export const HeroClassic = () => {
 
             <Container className="relative z-10 text-white h-full flex items-center">
                 <div className="max-w-4xl fade-up">
-                    <h1 className="text-7xl md:text-[9rem] font-serif leading-[0.8] mb-8 tracking-tighter">
+                    <h1 className="text-7xl md:text-[9rem]  leading-[0.8] mb-8 tracking-tighter">
                         Pure <br />
                         <span className="text-secondary italic font-light drop-shadow-2xl">Elegance.</span>
                     </h1>

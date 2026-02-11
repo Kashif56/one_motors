@@ -7,7 +7,8 @@
   --color-dark: #0a0a0a;
   --color-light: #ffffff;
   
-  --font-family-serif: "Playfair Display", serif;
+  /* Update: Using Inter for everything to match Contact page style */
+  --font-family-serif: "Inter", sans-serif; 
   --font-family-sans: "Inter", sans-serif;
 }
 
@@ -18,7 +19,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight;
+    @apply font-sans font-semibold tracking-tight;
   }
 }
 

@@ -20,7 +20,7 @@ const About = () => {
              <Container className="pt-32 pb-16 md:pt-40 md:pb-24">
                  {/* Header Section */}
                  <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24 px-4">
-                     <span className="text-secondary font-serif italic text-xl md:text-2xl mb-4 block">The Art of Motoring</span>
+                     <span className="text-secondary  italic text-xl md:text-2xl mb-4 block">The Art of Motoring</span>
                      <h1 className="text-4xl md:text-7xl font-light tracking-tight mb-8 leading-tight">
                         Curating Excellence <br className="hidden md:block"/> Since 2008.
                      </h1>
@@ -41,7 +41,7 @@ const About = () => {
                          
                          {/* Floating Quote Card (Desktop Only) */}
                          <div className="absolute -bottom-12 -right-12 bg-[#1a1a1a] border border-white/10 text-white p-8 md:p-12 max-w-sm md:max-w-md hidden lg:block shadow-2xl">
-                             <p className="font-serif text-xl md:text-2xl italic leading-relaxed text-gray-200">"We believe every car has a soul. Our job is to match it with yours."</p>
+                             <p className=" text-xl md:text-2xl italic leading-relaxed text-gray-200">"We believe every car has a soul. Our job is to match it with yours."</p>
                              <div className="mt-6 font-bold text-xs md:text-sm tracking-widest uppercase text-secondary">— Shahbaz, Founder</div>
                          </div>
                      </div>
@@ -58,7 +58,7 @@ const About = () => {
                          
                          {/* Mobile Quote (Visible only on mobile/tablet) */}
                          <div className="lg:hidden mb-8 border-l-4 border-secondary pl-6 py-4 bg-white/5">
-                             <p className="font-serif text-lg italic leading-relaxed text-gray-300">"We believe every car has a soul. Our job is to match it with yours."</p>
+                             <p className=" text-lg italic leading-relaxed text-gray-300">"We believe every car has a soul. Our job is to match it with yours."</p>
                              <div className="mt-4 font-bold text-xs tracking-widest uppercase text-secondary">— Shahbaz</div>
                          </div>
 
@@ -66,7 +66,7 @@ const About = () => {
                          <div className="grid grid-cols-2 gap-8 border-t border-white/10 pt-8">
                              {stats.slice(0,2).map((stat, i) => (
                                  <div key={i}>
-                                     <div className="text-3xl md:text-4xl font-serif text-secondary mb-1">{stat.value}</div>
+                                     <div className="text-3xl md:text-4xl  text-secondary mb-1">{stat.value}</div>
                                      <div className="text-[10px] md:text-xs font-bold uppercase tracking-wider text-gray-500">{stat.label}</div>
                                  </div>
                              ))}
@@ -95,7 +95,7 @@ const About = () => {
                                      />
                                  </div>
                                  <h4 className="text-xl font-bold mb-1 group-hover:text-secondary transition-colors">{member.name}</h4>
-                                 <p className="text-gray-500 font-serif italic">{member.role}</p>
+                                 <p className="text-gray-500  italic">{member.role}</p>
                              </div>
                          ))}
                      </div>

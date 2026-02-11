@@ -22,7 +22,7 @@ const TrustBadges = () => {
                                 0{i+1}
                              </div>
                              <div className="pb-4 lg:pb-0">
-                                 <div className="text-2xl md:text-5xl font-serif text-white mb-2 leading-none italic group-hover:text-secondary transition-colors">
+                                 <div className="text-2xl md:text-5xl  text-white mb-2 leading-none italic group-hover:text-secondary transition-colors">
                                     {stat.value}
                                  </div>
                                  <div className="text-[10px] md:text-xs text-gray-500 font-bold uppercase tracking-wider group-hover:text-white transition-colors">

@@ -70,7 +70,7 @@ const CarDetails = () => {
                         <Link to="/cars" className="inline-flex items-center gap-2 text-gray-500 hover:text-white transition-colors mb-6 text-xs uppercase tracking-widest font-bold group">
                             <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" /> Back to Collection
                         </Link>
-                        <h1 className="text-4xl md:text-8xl font-serif text-white leading-[0.9] -ml-1 mb-4">
+                        <h1 className="text-4xl md:text-8xl  text-white leading-[0.9] -ml-1 mb-4">
                             {car.brand}<br/>
                             <span className="italic text-gray-600 block mt-2 text-2xl md:text-5xl">{car.title}</span>
                         </h1>
@@ -104,7 +104,7 @@ const CarDetails = () => {
                          {/* Technical Data Card */}
                          <div className="bg-[#0a0a0a] p-6 rounded-2xl border border-white/5">
                         
-                             <h3 className="text-white font-serif text-lg italic mb-4 flex items-center gap-2">
+                             <h3 className="text-white  text-lg italic mb-4 flex items-center gap-2">
                                 <FileText size={16} className="text-secondary"/> Technical Data
                              </h3>
                              <TechSpecRow label="Engine" value={car.fuel_type} />
@@ -119,7 +119,7 @@ const CarDetails = () => {
                              
                               {/* Enquiry Form */}
                               <div className="mb-8">
-                                  <h3 className="text-xl font-serif text-white mb-2 italic">Express Interest</h3>
+                                  <h3 className="text-xl  text-white mb-2 italic">Express Interest</h3>
                                   <p className="text-gray-500 mb-6 text-xs">Fill out the form below to enquire about this vehicle.</p>
                                   <EnquiryForm compact={true} />
                               </div>
@@ -147,9 +147,7 @@ const CarDetails = () => {
                          
                          {/* Description */}
                          <div className="space-y-8">
-                            <h2 className="text-2xl md:text-3xl font-serif text-white leading-tight">
-                                "A masterclass in automotive excellence. This vehicle represents the perfect synthesis of performance and luxury."
-                            </h2>
+                            
                             <div className="prose prose-invert prose-lg text-gray-400 font-light leading-relaxed">
                                 <p>{car.description || "The driving experience is nothing short of extraordinary. From dynamic handling to a cabin that isolates you from the world outside, every detail has been calibrated for enjoyment. This vehicle has been meticulously inspected and prepared to the highest standard."}</p>
                             </div>
@@ -175,7 +173,7 @@ const CarDetails = () => {
                 {similarCars.length > 0 && (
                     <div className="border-t border-white/10 pt-20">
                         <div className="flex justify-between items-end mb-10">
-                            <h3 className="text-3xl md:text-5xl font-serif text-white italic">You May Also Like</h3>
+                            <h3 className="text-3xl md:text-5xl  text-white italic">You May Also Like</h3>
                             <Link to="/cars" className="text-xs font-bold uppercase tracking-widest text-gray-500 hover:text-white transition-colors">View All Inventory</Link>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

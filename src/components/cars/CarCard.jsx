@@ -27,7 +27,7 @@ const CarCard = ({ car }) => {
             
             <div className="px-5 pt-6 text-center">
                 {/* Brand & Model: Matching the 'Editorial' Serif style */}
-                <h3 className="font-serif text-3xl text-white mb-2 group-hover:text-secondary transition-colors leading-none">
+                <h3 className=" text-3xl text-white mb-2 group-hover:text-secondary transition-colors leading-none">
                     {car?.brand} <span className="text-gray-500 text-xl font-light italic">{car?.model}</span>
                 </h3>
                 

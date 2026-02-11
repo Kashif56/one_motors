@@ -35,7 +35,7 @@ const Dashboard = () => {
       <Container>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12 fade-up">
           <div>
-            <h1 className="text-4xl font-serif font-bold text-white">Inventory Management</h1>
+            <h1 className="text-4xl  font-bold text-white">Inventory Management</h1>
             <p className="text-gray-400 mt-2">Manage your cars and featured listings</p>
           </div>
           <div className="flex gap-4">

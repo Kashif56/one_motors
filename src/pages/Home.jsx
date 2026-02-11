@@ -42,7 +42,7 @@ const Home = () => {
                  <span className="w-8 md:w-12 h-[2px] bg-secondary" />
                  <span className="text-secondary font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs">Our Showcase</span>
               </div>
-              <h2 className="text-4xl md:text-7xl font-serif text-white leading-tight">Latest <span className="text-secondary italic">Arrivals</span></h2>
+              <h2 className="text-4xl md:text-7xl  text-white leading-tight">Latest <span className="text-secondary italic">Arrivals</span></h2>
             </div>
             <Link to="/cars" className="group flex items-center gap-3 text-secondary font-bold text-base md:text-lg hover:text-white transition-all relative z-10 bg-dark/50 rounded-full px-4 py-2 md:px-0 md:py-0 md:bg-transparent md:backdrop-blur-none backdrop-blur-sm border border-white/10 md:border-none">
               View All Collection 

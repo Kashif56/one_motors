@@ -37,7 +37,7 @@ export const ExperienceLuxuryV4 = () => {
               <div className="absolute -bottom-2 -right-2 w-20 h-20 border-b-2 border-r-2 border-secondary/50" />
               
               <h3 className="text-secondary font-bold tracking-[0.4em] text-xs mb-6 uppercase">One Motors Elite</h3>
-              <h2 className="text-4xl md:text-6xl font-serif text-white mb-6 leading-[0.9]">
+              <h2 className="text-4xl md:text-6xl  text-white mb-6 leading-[0.9]">
                 {content.heading} <br/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-white italic">
                   {content.subheading}
@@ -63,7 +63,7 @@ export const ExperienceLuxuryV4 = () => {
             />
             {/* Floating Detail Badge */}
             <div className="absolute -bottom-6 -left-6 md:bottom-12 md:-left-12 z-20 bg-white p-4 max-w-[200px] shadow-2xl hidden md:block">
-               <p className="text-dark font-serif text-xl italic leading-tight">"Where <br/>performance meets <br/>art."</p>
+               <p className="text-dark  text-xl italic leading-tight">"Where <br/>performance meets <br/>art."</p>
             </div>
           </div>
 
@@ -108,7 +108,7 @@ export const ExperienceLuxuryV5 = () => {
                 `}>
                   {tab.subtitle}
                 </span>
-                <h2 className={`text-4xl md:text-7xl font-serif text-white mb-4 transition-all duration-500 origin-left
+                <h2 className={`text-4xl md:text-7xl  text-white mb-4 transition-all duration-500 origin-left
                    ${activeTab === idx ? 'scale-100' : 'scale-75 opacity-70'}
                 `}>
                   {tab.title}
@@ -166,7 +166,7 @@ export const ExperienceLuxuryV6 = () => {
                   
                   <Award className="text-secondary w-10 h-10 mb-8" />
                   
-                  <h2 className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
+                  <h2 className="text-4xl md:text-5xl  text-white mb-6 leading-tight">
                     Refined <span className="text-gray-500 italic">&</span> <br/>
                     <span className="text-white">Rarefied.</span>
                   </h2>
@@ -189,7 +189,7 @@ export const ExperienceLuxuryV6 = () => {
                   />
                   <div className="absolute inset-0 bg-secondary/10 mix-blend-overlay" />
                   <div className="absolute bottom-8 left-8 text-white z-10">
-                     <p className="font-serif text-2xl italic">"Perfection"</p>
+                     <p className=" text-2xl italic">"Perfection"</p>
                   </div>
                </div>
 

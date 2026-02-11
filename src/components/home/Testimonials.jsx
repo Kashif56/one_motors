@@ -53,7 +53,7 @@ const Testimonials = () => {
     return (
         <Section className="bg-[#080808] py-32 relative overflow-hidden">
              {/* Background Big Quote */}
-             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%] text-[200px] md:text-[500px] font-serif text-white/5 opacity-20 pointer-events-none select-none overflow-hidden leading-none z-0">"</div>
+             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%] text-[200px] md:text-[500px]  text-white/5 opacity-20 pointer-events-none select-none overflow-hidden leading-none z-0">"</div>
              
              <Container className="relative z-10">
                  <div className="max-w-5xl mx-auto text-center flex flex-col items-center">
@@ -65,7 +65,7 @@ const Testimonials = () => {
                      </div>
                      
                      <div className="animate-fade-up min-h-[300px] flex flex-col justify-between">
-                         <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif text-white leading-tight mb-10 transition-all duration-500">
+                         <h2 className="text-3xl md:text-5xl lg:text-6xl  text-white leading-tight mb-10 transition-all duration-500">
                             "{review.text}"
                          </h2>
                          

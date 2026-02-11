@@ -162,7 +162,7 @@ const EditCar = () => {
           {/* Form Side */}
           <div className="lg:col-span-8 flex-grow">
             <div className="bg-white rounded-[40px] shadow-sm border border-gray-100 p-8 md:p-12">
-              <h1 className="text-4xl font-serif font-bold mb-10">Edit Vehicle</h1>
+              <h1 className="text-4xl  font-bold mb-10">Edit Vehicle</h1>
 
               <form onSubmit={handleSubmit} className="space-y-10">
                 {/* Basic Info */}

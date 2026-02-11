@@ -8,16 +8,16 @@ const HeroFilter = () => {
     const [price, setPrice] = useState('')
 
     return (
-        <div className="w-full max-w-5xl mx-auto mt-8 md:mt-12 fade-up" style={{ animationDelay: '0.2s' }}>
-            <div className="glass-card p-4 md:p-6 backdrop-blur-2xl border-white/10 bg-black/40 rounded-[2rem] shadow-2xl">
-                <div className="flex flex-col lg:flex-row gap-4">
+        <div className="w-full max-w-5xl mx-auto mt-6 md:mt-12 fade-up" style={{ animationDelay: '0.2s' }}>
+            <div className="glass-card p-4 md:p-6 backdrop-blur-2xl border-white/10 bg-black/50 rounded-2xl md:rounded-[2rem] shadow-2xl mx-2 md:mx-0">
+                <div className="flex flex-col lg:flex-row gap-3 md:gap-4">
                     {/* Make Selection */}
                     <div className="flex-1 relative group">
                          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-secondary pointer-events-none">
-                            <Gauge size={20} />
+                            <Gauge size={18} className="md:w-5 md:h-5" />
                          </div>
                         <select 
-                            className="w-full h-14 pl-12 pr-10 bg-white/5 text-white border border-white/10 rounded-xl appearance-none focus:outline-none focus:border-secondary focus:bg-white/10 transition-all font-medium cursor-pointer"
+                            className="w-full h-12 md:h-14 pl-11 md:pl-12 pr-10 bg-white/5 text-white border border-white/10 rounded-xl appearance-none focus:outline-none focus:border-secondary focus:bg-white/10 transition-all text-sm md:text-base font-medium cursor-pointer"
                             value={make}
                             onChange={(e) => setMake(e.target.value)}
                         >
@@ -34,10 +34,10 @@ const HeroFilter = () => {
                     {/* Model Selection */}
                     <div className="flex-1 relative group">
                         <div className="absolute left-4 top-1/2 -translate-y-1/2 text-secondary pointer-events-none">
-                            <Calendar size={20} />
+                            <Calendar size={18} className="md:w-5 md:h-5" />
                         </div>
                         <select 
-                            className="w-full h-14 pl-12 pr-10 bg-white/5 text-white border border-white/10 rounded-xl appearance-none focus:outline-none focus:border-secondary focus:bg-white/10 transition-all font-medium cursor-pointer"
+                            className="w-full h-12 md:h-14 pl-11 md:pl-12 pr-10 bg-white/5 text-white border border-white/10 rounded-xl appearance-none focus:outline-none focus:border-secondary focus:bg-white/10 transition-all text-sm md:text-base font-medium cursor-pointer"
                             value={model}
                             onChange={(e) => setModel(e.target.value)}
                         >
@@ -54,10 +54,10 @@ const HeroFilter = () => {
                     {/* Price Range */}
                     <div className="flex-1 relative group">
                         <div className="absolute left-4 top-1/2 -translate-y-1/2 text-secondary pointer-events-none">
-                            <span className="font-serif font-bold text-lg">£</span>
+                            <span className=" font-bold text-base md:text-lg">£</span>
                         </div>
                         <select 
-                            className="w-full h-14 pl-12 pr-10 bg-white/5 text-white border border-white/10 rounded-xl appearance-none focus:outline-none focus:border-secondary focus:bg-white/10 transition-all font-medium cursor-pointer"
+                            className="w-full h-12 md:h-14 pl-11 md:pl-12 pr-10 bg-white/5 text-white border border-white/10 rounded-xl appearance-none focus:outline-none focus:border-secondary focus:bg-white/10 transition-all text-sm md:text-base font-medium cursor-pointer"
                             value={price}
                             onChange={(e) => setPrice(e.target.value)}
                         >
@@ -71,8 +71,8 @@ const HeroFilter = () => {
                     </div>
 
                     {/* Search Button */}
-                    <Button className="h-14 px-8 bg-secondary text-dark font-bold hover:bg-white hover:text-dark transition-all duration-300 shadow-lg shadow-secondary/20 flex items-center justify-center gap-2 lg:min-w-[160px]">
-                        <Search size={20} />
+                    <Button className="h-12 md:h-14 px-8 bg-secondary text-dark font-bold hover:bg-white hover:text-dark transition-all duration-300 shadow-lg shadow-secondary/20 flex items-center justify-center gap-2 lg:min-w-[160px] rounded-xl md:rounded-xl">
+                        <Search size={18} className="md:w-5 md:h-5" />
                         Search
                     </Button>
                 </div>

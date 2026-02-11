@@ -36,7 +36,7 @@ export const TheOneMotorsWayV1 = () => {
       <Container>
         <div className="text-center mb-20 relative z-10">
           <span className="text-secondary font-bold uppercase tracking-[0.3em] text-xs">The Process</span>
-          <h2 className="text-5xl md:text-6xl font-serif text-white mt-4 italic"> effortless. <br/><span className="not-italic font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-600">Performance.</span></h2>
+          <h2 className="text-5xl md:text-6xl  text-white mt-4 italic"> effortless. <br/><span className="not-italic font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-600">Performance.</span></h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
@@ -117,7 +117,7 @@ export const TheOneMotorsWayV3 = () => {
         <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/3">
                 <span className="text-secondary font-bold tracking-widest text-sm uppercase mb-4 block">The Journey</span>
-                <h2 className="text-5xl md:text-7xl font-serif text-white mb-8 leading-none">
+                <h2 className="text-5xl md:text-7xl  text-white mb-8 leading-none">
                     Your Path to <br/><span className="text-secondary italic">Excellence.</span>
                 </h2>
                 <div className="h-1 w-24 bg-gradient-to-r from-secondary to-transparent" />
@@ -129,7 +129,7 @@ export const TheOneMotorsWayV3 = () => {
                         ${i % 2 === 1 ? 'md:translate-y-12' : ''}
                     `}>
                         <div className="flex justify-between items-start mb-8">
-                            <span className="text-4xl font-serif text-white/10 group-hover:text-secondary/20 transition-colors font-bold">0{i+1}</span>
+                            <span className="text-4xl  text-white/10 group-hover:text-secondary/20 transition-colors font-bold">0{i+1}</span>
                             <div className="p-3 bg-white/5 rounded-xl group-hover:bg-secondary group-hover:text-black text-white transition-all">
                                 <step.icon size={20} />
                             </div>
